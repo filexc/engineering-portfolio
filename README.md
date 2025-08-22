@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Engineering Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive digital portfolio built with React to showcase engineering projects and technical skills.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home Page**: Displays the three most recent featured projects
+- **Archive Page**: Shows all older projects with skill tags
+- **Individual Project Pages**: Detailed view of each project with image galleries
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean, professional design with smooth animations
 
-### `npm start`
+## Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The portfolio follows the structure you requested:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Main Page (Home)**: Shows the three most recent projects with flagship images
+2. **Archive Page**: Contains all older projects with links to individual pages
+3. **Individual Project Pages**: Detailed view of each project with:
+   - Project overview and description
+   - Skills and technologies used
+   - Image gallery with descriptions
+   - Navigation back to home/archive
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (version 14 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone or download this repository
+2. Navigate to the project directory:
+   ```bash
+   cd engineering-portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Adding Your Images
 
-### `npm run eject`
+1. Open `placeholder-generator.html` in your web browser
+2. Click the buttons to generate placeholder images for each project
+3. Download the generated images
+4. Place them in the `public/images/` directory with the correct filenames
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Customizing Your Projects
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Edit `src/data/projects.js` to customize your projects:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Update project titles, descriptions, and dates
+- Add your own images (place them in `public/images/`)
+- Modify skills and technologies
+- Set which projects are featured (shown on home page)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the Portfolio
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The portfolio will open at `http://localhost:3000`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building for Production
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This creates a `build` folder with your production-ready portfolio.
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/
+│   ├── Header.js          # Navigation header
+│   ├── Nav.js             # Site title and branding
+│   ├── Home.js            # Home page with featured projects
+│   ├── Archive.js         # Archive page with all projects
+│   ├── ProjectDetail.js   # Individual project pages
+│   └── *.css              # Component-specific styles
+├── data/
+│   └── projects.js        # Project data and helper functions
+├── App.js                 # Main app with routing
+└── App.css               # Global styles
+```
 
-### Making a Progressive Web App
+## Customization Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Adding New Projects
 
-### Advanced Configuration
+1. Add a new project object to the `projects` array in `src/data/projects.js`
+2. Include all required fields:
+   - `id`: Unique identifier
+   - `title`: Project title
+   - `shortDescription`: Brief description for cards
+   - `fullDescription`: Detailed description for project pages
+   - `flagshipImage`: Main project image path
+   - `images`: Array of project images with descriptions
+   - `skills`: Array of skills/technologies used
+   - `date`: Project completion date
+   - `featured`: Boolean (true for home page, false for archive)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Styling
+
+- Global styles are in `src/App.css`
+- Component-specific styles are in their respective `.css` files
+- The design uses a purple gradient theme that can be easily customized
+- All components are responsive and mobile-friendly
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this portfolio to:
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static hosting service
 
-### `npm run build` fails to minify
+## Example Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Each project includes:
+- **Flagship Image**: Main project image displayed on cards
+- **Project Overview**: Detailed description of the work
+- **Skills & Technologies**: Tags showing what was learned
+- **Image Gallery**: Multiple images showing the process and results
+- **Navigation**: Easy access to other projects
+
+## License
+
+This project is open source and available under the MIT License.
