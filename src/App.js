@@ -6,11 +6,11 @@ import Archive from './components/Archive';
 import ProjectDetail from './components/ProjectDetail';
 
 // Set basename for GitHub Pages deployment
-const basename = process.env.NODE_ENV === 'production' ? '/engineering-portfolio' : '';
+const basename = window.location.hostname === 'filexc.github.io' ? '/engineering-portfolio' : '';
 
 const App = () => {
   return (
-    <Router basename="/engineering-portfolio">
+    <Router basename={basename}>
       <div className="App">
         <Header />
         <main>

@@ -4,7 +4,7 @@ export const getImagePath = (imagePath) => {
   const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
   
   // For GitHub Pages, we need to include the repository name
-  if (process.env.NODE_ENV === 'production') {
+  if (window.location.hostname === 'filexc.github.io') {
     return `/engineering-portfolio/${cleanPath}`;
   }
   
