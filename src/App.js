@@ -5,9 +5,12 @@ import Home from './components/Home';
 import Archive from './components/Archive';
 import ProjectDetail from './components/ProjectDetail';
 
+// Set basename for GitHub Pages deployment
+const basename = process.env.NODE_ENV === 'production' ? '/engineering-portfolio' : '';
+
 const App = () => {
   return (
-    <Router>
+    <Router basename="/engineering-portfolio">
       <div className="App">
         <Header />
         <main>
