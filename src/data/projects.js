@@ -52,10 +52,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    shortDescription: "Project 2 Short Description",
-    fullDescription: "Project 2 Long Description",
-    flagshipImage: "/images/placeholder.jpg",
+    title: "CollectIndex",
+    shortDescription: "An iOS app to organize and store information about collections digitally",
+    fullDescription: "I spent a semester coming up with an idea for an app, conducting interviews, prototyping, programming it, and released it to the Apple App Store. As such, I wanted to create a product that would streamline the process of storing information about different collections of items, while still leaving it as open-ended and customizable as possible for the user. Most of the process was a lot of trial and error, as I had never worked with Swift before, but I ended up with a result I really liked.",
+    flagshipImage: "/images/CollectIndexHome.png",
     media: [
       {
         type: "image",
@@ -73,70 +73,143 @@ export const projects = [
         description: "Project 2 Screenshot 3"
       }
     ],
-    skills: ["Skill", "Skill", "Skill", "Skill"],
-    
-    date: "2023-12-10"
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    shortDescription: "Project 3 Short Description",
-    fullDescription: "Project 3 Long Description",
-    flagshipImage: "/images/placeholder.jpg",
-    media: [
+    skills: [
       {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 1"
+        name: "Swift",
+        description: "iOS programming language used to build the app"
       },
       {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 2"
+        name: "SwiftUI",
+        description: "Declarative UI framework for creating responsive iOS interfaces"
       },
       {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 3"
+        name: "Figma",
+        description: "Used for planning UX/UI design, wireframing, and creating an interactive prototype"
+      },
+      {
+        name: "XCode",
+        description: "Apple's development environment. Learned how to simulate the app and send a demo to an Apple device"
+      },
+      {
+        name: "User Research",
+        description: "Conducted interviews and user testing to understand collection management needs"
+      },
+      {
+        name: "App Store Publishing",
+        description: "Successfully published the app to the Apple App Store following submission guidelines"
       }
     ],
-    skills: ["Skill", "Skill", "Skill", "Skill"],
-    
-    date: "2023-08"
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    shortDescription: "Project 4 Short Description",
-    fullDescription: "Project 4 Long Description",
-    flagshipImage: "/images/placeholder.jpg",
-    media: [
-      {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 4 Screenshot 1"
-      },
-      {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 4 Screenshot 2"
-      },
-      {
-        type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 4 Screenshot 3"
-      }
-    ],
-    skills: ["Skill", "Skill", "Skill", "Skill"],
-    
-    date: "2023-06-15"
-  }
+    date: "Fall 2024"
+  } // ,
+  // {
+  //   id: 3,
+  //   title: "Project 3",
+  //   shortDescription: "Project 3 Short Description",
+  //   fullDescription: "Project 3 Long Description",
+  //   flagshipImage: "/images/placeholder.jpg",
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 3 Screenshot 1"
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 3 Screenshot 2"
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 3 Screenshot 3"
+  //     }
+  //   ],
+  //   skills: [
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     }
+  //   ],
+  //   date: "2023-08"
+  // },
+  // {
+  //   id: 4,
+  //   title: "Project 4",
+  //   shortDescription: "Project 4 Short Description",
+  //   fullDescription: "Project 4 Long Description",
+  //   flagshipImage: "/images/placeholder.jpg",
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 4 Screenshot 1"
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 4 Screenshot 2"
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "/images/placeholder.jpg",
+  //       description: "Project 4 Screenshot 3"
+  //     }
+  //   ],
+  //   skills: [
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     },
+  //     {
+  //       name: "Skill",
+  //       description: "Skill Description"
+  //     }
+  //   ],
+  //   date: "2023-06-15"
+  // }
 ];
 
 export const getFeaturedProjects = () => {
   // Sort projects by date (newest first) and return the first 3
   return projects
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .sort((a, b) => {
+      // Handle season dates by converting them to sortable format
+      const getSortableDate = (dateStr) => {
+        if (dateStr.includes('Spring') || dateStr.includes('Summer') || 
+            dateStr.includes('Fall') || dateStr.includes('Winter') ||
+            dateStr.includes('Autumn')) {
+          // Convert seasons to sortable dates
+          const [season, year] = dateStr.split(' ');
+          const seasonMap = {
+            'Spring': '03', 'Summer': '06', 'Fall': '09', 'Autumn': '09', 'Winter': '12'
+          };
+          return new Date(`${year}-${seasonMap[season]}-01`);
+        }
+        return new Date(dateStr);
+      };
+      
+      return getSortableDate(b.date) - getSortableDate(a.date);
+    })
     .slice(0, 3);
 };
 
@@ -156,6 +229,13 @@ export const isProjectFeatured = (projectId) => {
 
 // Utility function to format dates intelligently
 export const formatProjectDate = (dateString) => {
+  // Check if it's a season format (e.g., "Spring 2024", "Fall 2023")
+  if (dateString.includes('Spring') || dateString.includes('Summer') || 
+      dateString.includes('Fall') || dateString.includes('Winter') ||
+      dateString.includes('Autumn')) {
+    return dateString; // Return season format as-is
+  }
+
   // Check if the original string had a day component
   const hasDay = dateString.includes('-') && dateString.split('-').length === 3;
 
