@@ -239,12 +239,18 @@
 }
 
 .media-item {
-  flex: 0 0 400px;
+  flex: 0 0 auto;
+  min-width: 200px;
+  max-width: 600px;
   background: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
 }
 
 .media-item:hover {
@@ -252,10 +258,28 @@
 }
 
 .media-content {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+  width: auto;
+  height: 400px;
+  object-fit: contain;
   display: block;
+  background-color: #f8f9fa;
+}
+
+.media-content-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* Specific styles for videos/iframes */
+.media-content[src*="youtube.com"],
+.media-content[src*="vimeo.com"],
+.media-content[src*=".mp4"],
+.media-content[src*=".webm"] {
+  width: 560px;
+  height: 315px;
 }
 
 .media-description {
@@ -266,8 +290,16 @@
   text-align: center;
 }
 
-.repository-link-inline {
+.project-links {
   margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.repository-link-inline,
+.app-store-link-inline {
+  margin: 0;
 }
 
 .repo-button-small {
@@ -292,9 +324,32 @@
   text-decoration: none;
 }
 
-.github-icon-small {
+.github-icon-small,
+.app-store-icon-small {
   width: 16px;
   height: 16px;
+}
+
+.app-store-button-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.app-store-button-small:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  color: white;
+  text-decoration: none;
 }
 
 .gallery-grid {

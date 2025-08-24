@@ -59,18 +59,23 @@ export const projects = [
     media: [
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 2 Screenshot 1"
+        src: "/images/CollectIndexCrazy8s.png",
+        description: "<strong>Crazy 8s Brainstorming:</strong> To come up with possible solutions for the generated problem, I spent 5 minutes coming up with 8 ideas that could potentially solve the problem, even if some of them weren't realistic."
       },
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 2 Screenshot 2"
+        src: "/images/FigmaPrototype.png",
+        description: "<strong>Figma Prototype:</strong> I prototyped all the features I had ideally wanted to complete throughout the course of the project to get feedback on all potential features. Based on the feedback I received at this stage, I modified the app's appearance."
       },
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 2 Screenshot 3"
+        src: "/images/CollectIndexDeleteItem.png",
+        description: "Implementation of Deleting an Item"
+      },
+      {
+        type: "image",
+        src: "/images/CreateItem.png",
+        description: "Create a new item to be a part of a collection"
       }
     ],
     skills: [
@@ -99,6 +104,14 @@ export const projects = [
         description: "Successfully published the app to the Apple App Store following submission guidelines"
       }
     ],
+    repository: {
+      url: "https://github.com/filexc/CollectIndex",
+      platform: "GitHub"
+    },
+    appStore: {
+      url: "https://apps.apple.com/lv/app/collectindex/id6738508694",
+      platform: "App Store"
+    },
     date: "Fall 2024"
   },
   {
