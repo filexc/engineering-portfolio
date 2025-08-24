@@ -298,7 +298,8 @@
 }
 
 .repository-link-inline,
-.app-store-link-inline {
+.app-store-link-inline,
+.website-link-inline {
   margin: 0;
 }
 
@@ -325,7 +326,8 @@
 }
 
 .github-icon-small,
-.app-store-icon-small {
+.app-store-icon-small,
+.website-icon-small {
   width: 16px;
   height: 16px;
 }
@@ -346,6 +348,28 @@
 }
 
 .app-store-button-small:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.website-button-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.website-button-small:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
   color: white;

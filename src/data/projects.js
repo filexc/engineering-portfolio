@@ -116,46 +116,58 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Project 3",
-    shortDescription: "Project 3 Short Description",
-    fullDescription: "Project 3 Long Description",
-    flagshipImage: "/images/placeholder.jpg",
+    title: "Library Database Website",
+    shortDescription: "A filtering system for the school library's databases",
+    fullDescription: "This is currently my main technical project, so updates are still being made to the appearance of this site. The goal of the project was to create a website for the larger Casti community to use that would allow them to more easily filter through our databases while still being able to access all 250+ of them, rather than a subset. This was the first project where I was aided by AI in any level of programming, as I had no background in web development. Users can filter the databases by tags, providers, or the letter it starts with.",
+    flagshipImage: "/images/DatabaseSite1.png",
     media: [
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 1"
+        src: "/images/PrimaryTagLetter.png",
+        description: "<strong>Filtering by Primary Tag and Letter</strong>"
       },
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 2"
+        src: "/images/SecondaryTag.png",
+        description: "Filtering by Secondary Tag"
       },
       {
         type: "image",
-        src: "/images/placeholder.jpg",
-        description: "Project 3 Screenshot 3"
+        src: "/images/Provider.png",
+        description: "Filtering by Provider"
       }
     ],
     skills: [
       {
-        name: "Skill",
-        description: "Skill Description"
+        name: "JavaScript",
+        description: "Used for interactive functionality, data filtering, and dynamic content rendering on the library database website"
       },
       {
-        name: "Skill",
-        description: "Skill Description"
+        name: "HTML",
+        description: "Created semantic markup structure for the database filtering interface and accessibility compliance"
       },
       {
-        name: "Skill",
-        description: "Skill Description"
+        name: "CSS",
+        description: "Designed responsive layout and styling for the library database website with modern UI/UX principles"
       },
       {
-        name: "Skill",
-        description: "Skill Description"
+        name: "React",
+        description: "Built component-based architecture for the filtering system, state management, and dynamic database display"
+      },
+      {
+        name: "Programming with AI",
+        description: "Leveraged AI assistance for web development learning and implementation, marking first experience with AI-aided programming"
       }
     ],
-    date: "2023-08"
+    repository: {
+      url: "https://github.com/filexc/Database_Project",
+      platform: "GitHub"
+    },
+    website: {
+      url: "https://filexc.github.io/Database_Project/",
+      platform: "Live Site"
+    },
+    date: "2025"
   } //,
   // {
   //   id: 4,
