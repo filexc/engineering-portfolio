@@ -115,14 +115,25 @@ const ProjectDetail = () => {
                 {project.media.map((item, index) => (
                   <div key={index} className="media-item">
                     {item.type === "video" ? (
-                      <video 
-                        src={item.src} 
-                        controls 
-                        className="media-content"
-                        poster="/images/video-poster.jpg"
-                      >
-                        Your browser does not support the video tag.
-                      </video>
+                      item.src.includes('youtube.com') ? (
+                        <iframe
+                          src={item.src}
+                          title={item.description}
+                          className="media-content"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      ) : (
+                        <video 
+                          src={item.src} 
+                          controls 
+                          className="media-content"
+                          poster="/images/video-poster.jpg"
+                        >
+                          Your browser does not support the video tag.
+                        </video>
+                      )
                     ) : (
                       <img 
                         src={item.src} 

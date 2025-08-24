@@ -38,11 +38,11 @@ export const projects = [
         src: "/images/BlockHint.png",
         description: "Runtime indication of a requested hint. This shows a hint that is telling the user that the darker cell has a legal value that's the only one in the given block."
       },
-      {
-        type: "video",
-        src: "/videos/112 TP Sudoku Walkthrough.mp4",
-        description: "Gameplay demo showing the Sudoku interface and solving features. This demonstrates all the features except for the more complex hints, as that feature was added later."
-      }
+              {
+          type: "video",
+          src: "https://www.youtube.com/embed/sVqf93bNh4U",
+          description: "Gameplay demo showing the Sudoku interface and solving features. This demonstrates all the features except for the more complex hints, as that feature was added later."
+        }
     ],
     repository: {
       url: "https://github.com/filexc/112TP-Sudoku",
