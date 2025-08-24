@@ -100,50 +100,50 @@ export const projects = [
       }
     ],
     date: "Fall 2024"
-  } // ,
-  // {
-  //   id: 3,
-  //   title: "Project 3",
-  //   shortDescription: "Project 3 Short Description",
-  //   fullDescription: "Project 3 Long Description",
-  //   flagshipImage: "/images/placeholder.jpg",
-  //   media: [
-  //     {
-  //       type: "image",
-  //       src: "/images/placeholder.jpg",
-  //       description: "Project 3 Screenshot 1"
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "/images/placeholder.jpg",
-  //       description: "Project 3 Screenshot 2"
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "/images/placeholder.jpg",
-  //       description: "Project 3 Screenshot 3"
-  //     }
-  //   ],
-  //   skills: [
-  //     {
-  //       name: "Skill",
-  //       description: "Skill Description"
-  //     },
-  //     {
-  //       name: "Skill",
-  //       description: "Skill Description"
-  //     },
-  //     {
-  //       name: "Skill",
-  //       description: "Skill Description"
-  //     },
-  //     {
-  //       name: "Skill",
-  //       description: "Skill Description"
-  //     }
-  //   ],
-  //   date: "2023-08"
-  // },
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    shortDescription: "Project 3 Short Description",
+    fullDescription: "Project 3 Long Description",
+    flagshipImage: "/images/placeholder.jpg",
+    media: [
+      {
+        type: "image",
+        src: "/images/placeholder.jpg",
+        description: "Project 3 Screenshot 1"
+      },
+      {
+        type: "image",
+        src: "/images/placeholder.jpg",
+        description: "Project 3 Screenshot 2"
+      },
+      {
+        type: "image",
+        src: "/images/placeholder.jpg",
+        description: "Project 3 Screenshot 3"
+      }
+    ],
+    skills: [
+      {
+        name: "Skill",
+        description: "Skill Description"
+      },
+      {
+        name: "Skill",
+        description: "Skill Description"
+      },
+      {
+        name: "Skill",
+        description: "Skill Description"
+      },
+      {
+        name: "Skill",
+        description: "Skill Description"
+      }
+    ],
+    date: "2023-08"
+  } //,
   // {
   //   id: 4,
   //   title: "Project 4",
