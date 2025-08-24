@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getArchivedProjects, isProjectFeatured } from '../data/projects';
+import { getImagePath } from '../utils/imageUtils';
 import './Archive.css';
 
 const Archive = () => {
@@ -21,7 +22,7 @@ const Archive = () => {
                   <div className="featured-badge">New</div>
                 )}
                 <div className="project-image">
-                  <img src={project.flagshipImage} alt={project.title} />
+                  <img src={getImagePath(project.flagshipImage)} alt={project.title} />
                 </div>
                 <div className="project-content">
                   <h3>{project.title}</h3>

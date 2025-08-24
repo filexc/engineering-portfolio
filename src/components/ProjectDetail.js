@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getProjectById, formatProjectDate } from '../data/projects';
+import { getImagePath } from '../utils/imageUtils';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
@@ -61,7 +62,7 @@ const ProjectDetail = () => {
 
       <section className="project-overview">
         <div className="flagship-image">
-          <img src={project.flagshipImage} alt={project.title} />
+          <img src={getImagePath(project.flagshipImage)} alt={project.title} />
         </div>
         <div className="project-description">
           <h2>Project Overview</h2>
@@ -127,14 +128,14 @@ const ProjectDetail = () => {
                           src={item.src} 
                           controls 
                           className="media-content"
-                          poster="/images/video-poster.jpg"
+                          poster={getImagePath("/images/video-poster.jpg")}
                         >
                           Your browser does not support the video tag.
                         </video>
                       )
                     ) : (
                       <img 
-                        src={item.src} 
+                        src={getImagePath(item.src)} 
                         alt={item.description} 
                         className="media-content"
                       />

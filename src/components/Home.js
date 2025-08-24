@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getFeaturedProjects } from '../data/projects';
+import { getImagePath } from '../utils/imageUtils';
 import './Home.css';
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
             <Link key={project.id} to={`/project/${project.id}`} className="project-card-link">
               <div className="project-card">
                 <div className="project-image">
-                  <img src={project.flagshipImage} alt={project.title} />
+                  <img src={getImagePath(project.flagshipImage)} alt={project.title} />
                 </div>
                 <div className="project-content">
                   <h3>{project.title}</h3>
