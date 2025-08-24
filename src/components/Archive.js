@@ -27,7 +27,9 @@ const Archive = () => {
                 <p>{project.shortDescription}</p>
                 <div className="project-skills">
                   {project.skills.slice(0, 3).map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
+                    <span key={index} className="skill-tag">
+                      {typeof skill === 'string' ? skill : skill.name}
+                    </span>
                   ))}
                 </div>
                 <Link to={`/project/${project.id}`} className="read-more">
