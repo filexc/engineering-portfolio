@@ -99,8 +99,6 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-
-
       {project.media && project.media.length > 0 && (
         <section className="project-media">
           <h2>Project Gallery</h2>

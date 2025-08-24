@@ -88,6 +88,17 @@
   line-height: 1.5;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .read-more {
   color: #667eea;
   text-decoration: none;

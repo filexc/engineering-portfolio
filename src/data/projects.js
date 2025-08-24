@@ -5,6 +5,23 @@ export const projects = [
     shortDescription: "A playable Sudoku game written in Python",
     fullDescription: "As the final term project for Carnegie Mellon University's 15-112: Fundamentals of Programming and Computer Science course, I made a sudoku game. Players can select from 5 different levels of board, and the program will load a randomly selected premade board from a list of options. Upon loading a board, the program runs an optimized backtracking algorithm to solve the board, which allows the player to get feedback on if they've inputted incorrect values anywhere. I also added various types of hints that can be provided to the player if requested.",
     flagshipImage: "/images/SudokuHomePage.png",
+    media: [
+      {
+        type: "image",
+        src: "/images/BacktrackerCode.png",
+        description: "The backtracker algorithm implementation in code. Other functions are referenced, but the names indicate what those do."
+      },
+      {
+        type: "image",
+        src: "/images/BlockHint.png",
+        description: "Runtime indication of a requested hint. This shows a hint that is telling the user that the darker cell has a legal value that's the only one in the given block."
+      },
+              {
+          type: "video",
+          src: "https://www.youtube.com/embed/sVqf93bNh4U",
+          description: "Gameplay demo showing the Sudoku interface and solving features. This demonstrates all the features except for the more complex hints, as that feature was added later."
+        }
+    ],
     skills: [
       {
         name: "Python",
@@ -27,23 +44,6 @@ export const projects = [
         description: "When a cell ony has one legal value remaining, the hint points to that cell, otherwise it highlights obvious groups of the same numbers to be eliminated from the options of others"
       }
     ],
-    media: [
-      {
-        type: "image",
-        src: "/images/BacktrackerCode.png",
-        description: "The backtracker algorithm implementation in code. Other functions are referenced, but the names indicate what those do."
-      },
-      {
-        type: "image",
-        src: "/images/BlockHint.png",
-        description: "Runtime indication of a requested hint. This shows a hint that is telling the user that the darker cell has a legal value that's the only one in the given block."
-      },
-              {
-          type: "video",
-          src: "https://www.youtube.com/embed/sVqf93bNh4U",
-          description: "Gameplay demo showing the Sudoku interface and solving features. This demonstrates all the features except for the more complex hints, as that feature was added later."
-        }
-    ],
     repository: {
       url: "https://github.com/filexc/112TP-Sudoku",
       platform: "GitHub"
@@ -56,7 +56,6 @@ export const projects = [
     shortDescription: "Project 2 Short Description",
     fullDescription: "Project 2 Long Description",
     flagshipImage: "/images/placeholder.jpg",
-    skills: ["Skill", "Skill", "Skill", "Skill"],
     media: [
       {
         type: "image",
@@ -74,6 +73,8 @@ export const projects = [
         description: "Project 2 Screenshot 3"
       }
     ],
+    skills: ["Skill", "Skill", "Skill", "Skill"],
+    
     date: "2023-12-10"
   },
   {
@@ -82,7 +83,6 @@ export const projects = [
     shortDescription: "Project 3 Short Description",
     fullDescription: "Project 3 Long Description",
     flagshipImage: "/images/placeholder.jpg",
-    skills: ["Skill", "Skill", "Skill", "Skill"],
     media: [
       {
         type: "image",
@@ -100,6 +100,8 @@ export const projects = [
         description: "Project 3 Screenshot 3"
       }
     ],
+    skills: ["Skill", "Skill", "Skill", "Skill"],
+    
     date: "2023-08"
   },
   {
@@ -108,7 +110,6 @@ export const projects = [
     shortDescription: "Project 4 Short Description",
     fullDescription: "Project 4 Long Description",
     flagshipImage: "/images/placeholder.jpg",
-    skills: ["Skill", "Skill", "Skill", "Skill"],
     media: [
       {
         type: "image",
@@ -126,31 +127,10 @@ export const projects = [
         description: "Project 4 Screenshot 3"
       }
     ],
+    skills: ["Skill", "Skill", "Skill", "Skill"],
+    
     date: "2023-06-15"
-  } //,
-  // {
-  //   id: 5,
-  //   title: "Project 5",
-  //   shortDescription: "Project 5 Short Description",
-  //   fullDescription: "Project 5 Long Description",
-  //   flagshipImage: "/images/placeholder.jpg",
-  //   images: [
-  //     {
-  //       src: "/images/placeholder.jpg",
-  //       description: "Image 1 Description"
-  //     },
-  //     {
-  //       src: "/images/placeholder.jpg",
-  //       description: "Image 2 Description"
-  //     },
-  //     {
-  //       src: "/images/placeholder.jpg",
-  //       description: "Image 3 Description"
-  //     }
-  //   ],
-  //   skills: ["Skill", "Skill", "Skill", "Skill"],
-  //   date: "2023-04-05"
-  // }
+  }
 ];
 
 export const getFeaturedProjects = () => {

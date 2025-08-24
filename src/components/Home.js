@@ -16,18 +16,20 @@ const Home = () => {
         <h2>Recent Projects</h2>
         <div className="projects-grid">
           {featuredProjects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-image">
-                <img src={project.flagshipImage} alt={project.title} />
+            <Link key={project.id} to={`/project/${project.id}`} className="project-card-link">
+              <div className="project-card">
+                <div className="project-image">
+                  <img src={project.flagshipImage} alt={project.title} />
+                </div>
+                <div className="project-content">
+                  <h3>{project.title}</h3>
+                  <p>{project.shortDescription}</p>
+                  <span className="read-more">
+                    Read more here
+                  </span>
+                </div>
               </div>
-              <div className="project-content">
-                <h3>{project.title}</h3>
-                <p>{project.shortDescription}</p>
-                <Link to={`/project/${project.id}`} className="read-more">
-                  Read more here
-                </Link>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
