@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/engineering-portfolio/static/css/main.2e337343.css",
+    "main.js": "/engineering-portfolio/static/js/main.80e7e900.js",
+    "static/js/453.ad210309.chunk.js": "/engineering-portfolio/static/js/453.ad210309.chunk.js",
+    "index.html": "/engineering-portfolio/index.html",
+    "main.2e337343.css.map": "/engineering-portfolio/static/css/main.2e337343.css.map",
+    "main.80e7e900.js.map": "/engineering-portfolio/static/js/main.80e7e900.js.map",
+    "453.ad210309.chunk.js.map": "/engineering-portfolio/static/js/453.ad210309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e337343.css",
+    "static/js/main.80e7e900.js"
+  ]
+}
