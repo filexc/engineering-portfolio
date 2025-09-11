@@ -171,9 +171,9 @@ export const projects = [
   } //,
   // {
   //   id: 4,
-  //   title: "Project 4",
-  //   shortDescription: "Project 4 Short Description",
-  //   fullDescription: "Project 4 Long Description",
+  //   title: "University Course Management System",
+  //   shortDescription: "A C++ program that manages student and course data for a university",
+  //   fullDescription: "As the final project for my CIS 278 C++ Programming course, I developed a console-based University Course Management System. The program is built to manage student and course records, handle enrollment and drops, and provide administrative tools. I applied object-oriented programming to create a modular and reusable system, with key features including student and course management, enrollment operations with a waitlist, and activity logging. The project required me to utilize multiple Standard Template Library (STL) containers, such as `map` for registries, `set` for preventing duplicate enrollments, `queue` for waitlists, and `deque` for activity logs, to ensure the program was both efficient and well-structured.",
   //   flagshipImage: "/images/placeholder.jpg",
   //   media: [
   //     {
@@ -194,23 +194,31 @@ export const projects = [
   //   ],
   //   skills: [
   //     {
-  //       name: "Skill",
+  //       name: "C++",
+  //       description: "Used C++ (C++17) to implement the entire system"
+  //     },
+  //     {
+  //       name: "OOP",
+  //       description: "Broke the program into 3 distinct classes (Student, Course, University System) to manage the data effectively"
+  //     },
+  //     {
+  //       name: "STL",
   //       description: "Skill Description"
   //     },
   //     {
-  //       name: "Skill",
+  //       name: "System Design",
   //       description: "Skill Description"
   //     },
   //     {
-  //       name: "Skill",
-  //       description: "Skill Description"
-  //     },
-  //     {
-  //       name: "Skill",
+  //       name: "Code Documentation",
   //       description: "Skill Description"
   //     }
   //   ],
-  //   date: "2023-06-15"
+  //   repository: {
+  //     url: "https://github.com/filexc/University-Course-Management-System",
+  //     platform: "GitHub"
+  //   },
+  //   date: "2025-08-01"
   // }
 ];
 
@@ -266,7 +274,11 @@ export const formatProjectDate = (dateString) => {
 
   if (hasDay) {
     // Format with day: "January 15, 2024"
-    const date = new Date(dateString);
+    // Parse year, month, and day directly to avoid timezone issues
+    const [year, month, day] = dateString.split('-');
+    const monthIndex = parseInt(month) - 1; // Month is 0-indexed in Date constructor
+    
+    const date = new Date(parseInt(year), monthIndex, parseInt(day));
     if (isNaN(date.getTime())) {
       return dateString; // Return original string if invalid
     }

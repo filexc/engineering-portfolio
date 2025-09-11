@@ -4,6 +4,22 @@ import { getProjectById, formatProjectDate } from '../data/projects';
 import { getImagePath } from '../utils/imageUtils';
 import './ProjectDetail.css';
 
+// Function to render text with inline code styling
+const renderTextWithCode = (text) => {
+  if (!text) return '';
+  
+  // Split text by backticks and render accordingly
+  const parts = text.split('`');
+  return parts.map((part, index) => {
+    // Odd indices are code (inside backticks)
+    if (index % 2 === 1) {
+      return <code key={index} className="inline-code">{part}</code>;
+    }
+    // Even indices are regular text
+    return part;
+  });
+};
+
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = getProjectById(id);
@@ -66,7 +82,7 @@ const ProjectDetail = () => {
         </div>
         <div className="project-description">
           <h2>Project Overview</h2>
-          <p>{project.fullDescription}</p>
+          <p>{renderTextWithCode(project.fullDescription)}</p>
           <div className="project-links">
             {project.repository && (
               <div className="repository-link-inline">

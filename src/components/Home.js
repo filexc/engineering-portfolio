@@ -8,11 +8,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* <section className="hero">
-        <h1>Welcome to My Engineering Portfolio</h1>
-        <p>Exploring the intersection of creativity, problem-solving, and technical skills through hands-on projects.</p>
-      </section> */}
-
       <section className="featured-projects">
         <h2>Recent Projects</h2>
         <div className="projects-grid">
@@ -41,6 +36,21 @@ const Home = () => {
         <Link to="/archive" className="archive-button">
           View Archive
         </Link>
+      </section>
+
+      <section className='manifesto'>
+        <h2>Declaration of Values</h2>
+        <div className="manifesto-content">
+          <ul className="manifesto-list">
+            <li>Good design should be both functional and aesthetic, and improve people's lives.</li>
+            <li>Design and technology should solve complex problems in our world, while.</li>
+            <li>Good design is accessible.</li>
+            <li>The designer's job is to create solutions that solve problems that the affected communities need/want.</li>
+            <li>Good design does not have negative impacts on the environment or the workers.</li>
+            <li>Design should come from a place of curiosity and empathy, with a critical eye toward potential negative consequences.</li>
+            <li>Good design eases concerns of the public, rather than introducing more anxieties.</li>
+          </ul>
+        </div>
       </section>
     </div>
   );

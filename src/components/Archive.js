@@ -10,7 +10,7 @@ const Archive = () => {
     <div className="archive">
       <section className="archive-header">
         <h1>Project Archive</h1>
-        <p>Explore all my engineering and technical projects from high school and beyond.</p>
+        <p>Explore all my engineering and technical projects from high school.</p>
       </section>
 
       <section className="archived-projects">
