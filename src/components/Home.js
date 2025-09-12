@@ -43,7 +43,7 @@ const Home = () => {
         <div className="manifesto-content">
           <ul className="manifesto-list">
             <li>Good design should be both functional and aesthetic, and improve people's lives.</li>
-            <li>Design and technology should solve complex problems in our world, while.</li>
+            <li>Design and technology should solve complex problems in our world.</li>
             <li>Good design is accessible.</li>
             <li>The designer's job is to create solutions that solve problems that the affected communities need/want.</li>
             <li>Good design does not have negative impacts on the environment or the workers.</li>
