@@ -78,7 +78,26 @@ const ProjectDetail = () => {
 
       <section className="project-overview">
         <div className="flagship-image">
-          <img src={getImagePath(project.flagshipImage)} alt={project.title} />
+          {project.id === 4 && project.media && project.media.some(item => item.type === "video") ? (
+            // For Mouse Dissection project, show the video instead of the cover image
+            (() => {
+              const videoItem = project.media.find(item => item.type === "video");
+              return videoItem && videoItem.src.includes('youtube.com') ? (
+                <iframe
+                  src={videoItem.src}
+                  title={videoItem.description}
+                  className="flagship-video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <img src={getImagePath(project.flagshipImage)} alt={project.title} />
+              );
+            })()
+          ) : (
+            <img src={getImagePath(project.flagshipImage)} alt={project.title} />
+          )}
         </div>
         <div className="project-description">
           <h2>Project Overview</h2>
@@ -148,7 +167,13 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-      {project.media && project.media.length > 0 && (
+      {project.media && project.media.length > 0 && project.media.filter((item, index) => {
+        // For Mouse Dissection project, exclude the video from gallery since it's shown as flagship content
+        if (project.id === 4 && item.type === "video") {
+          return false;
+        }
+        return true;
+      }).length > 0 && (
         <section className="project-media">
           <h2>Project Gallery</h2>
           <div className="media-scroll-wrapper">
@@ -159,7 +184,13 @@ const ProjectDetail = () => {
             )}
             <div className="media-scroll-container">
               <div className="media-scroll">
-                {project.media.map((item, index) => (
+                {project.media.filter((item, index) => {
+                  // For Mouse Dissection project, exclude the video from gallery since it's shown as flagship content
+                  if (project.id === 4 && item.type === "video") {
+                    return false;
+                  }
+                  return true;
+                }).map((item, index) => (
                   <div key={index} className="media-item">
                     <div className="media-content-wrapper">
                       {item.type === "video" ? (

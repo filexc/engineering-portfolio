@@ -168,9 +168,94 @@ export const projects = [
       platform: "Live Site"
     },
     date: "2025"
-  } //,
+  }, 
+  {
+    id: 4,
+    title: "Mouse Dissection",
+    shortDescription: "Reverse engineering of a USB computer mouse",
+    fullDescription: "As practice for the Unit 1 Project in Engineering III, I dissected a USB computer mouse to figure out more about how it functions. This hands-on exploration helped me understand the internal components and mechanisms that make a computer mouse work",
+    flagshipImage: "/images/mouse-dissection/CoverImageMouseDissection.png",
+    media: [
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-AllComponents.png",
+        description: "All components of the computer mouse laid out together"
+      },
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/cYAOoW5luf4",
+        description: "Video documentation of the mouse dissection process, showing the internal components and explaining how the red LED allows the mouse to track position"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-AmazonBasicsLabel.png",
+        description: "Product label from the Amazon Basics mouse showing model number"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-ExternalScrew.png",
+        description: "Phillips head screw used to secure the mouse casing"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-TopCasing.png",
+        description: "Top casing of the mouse"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-Internal Screw.png",
+        description: "Internal Phillips head screw used to secure the PCB to the bottom casing"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-PlasticPiece.png",
+        description: "Transparent plastic component used to refract the red LED light through"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-BottomCasing.png",
+        description: "Interior view of the bottom mouse casing"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-ScrollWheel.png",
+        description: "Scroll wheel mechanism removed from the PCB, showing the wheel and axle assembly"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-Connector.png",
+        description: "White plastic header connector with five pins for electrical component connections"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-USBCable.png",
+        description: "USB cable assembly with USB-A connector and internal header connector for power and data transmission"
+      },
+      {
+        type: "image",
+        src: "/images/mouse-dissection/MouseDissection-PCB.png",
+        description: "Main printed circuit board with optical sensor, switches, resistors, capacitors, and connectors"
+      }
+    ],
+    skills: [
+      {
+        name: "Reverse Engineering",
+        description: "Disassembled and analyzed the internal structure of a computer mouse before reassembling the components"
+      },
+      {
+        name: "Hardware Analysis",
+        description: "Identified and understood the function of the electronic components within the mouse"
+      },
+      {
+        name: "Documentation",
+        description: "Created video documentation to explain the dissection process and findings"
+      }
+    ],
+    date: "2025-09-11"
+  }
+  //,
   // {
-  //   id: 4,
+  //   id: 5,
   //   title: "University Course Management System",
   //   shortDescription: "A C++ program that manages student and course data for a university",
   //   fullDescription: "As the final project for my CIS 278 C++ Programming course, I developed a console-based University Course Management System. The program is built to manage student and course records, handle enrollment and drops, and provide administrative tools. I applied object-oriented programming to create a modular and reusable system, with key features including student and course management, enrollment operations with a waitlist, and activity logging. The project required me to utilize multiple Standard Template Library (STL) containers, such as `map` for registries, `set` for preventing duplicate enrollments, `queue` for waitlists, and `deque` for activity logs, to ensure the program was both efficient and well-structured.",
