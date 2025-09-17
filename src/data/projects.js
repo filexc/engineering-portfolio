@@ -252,6 +252,59 @@ export const projects = [
       }
     ],
     date: "2025-09-11"
+  }, {
+    id: 5,
+    title: "Engineering Marker Drawings",
+    shortDescription: "Three homeworks worth of marker drawings",
+    fullDescription: "Three homework assignments to practice rendering with markers and product sketching",
+    flagshipImage: "/images/marker-drawings/Memphis-Car-Lamp-Cover.png",
+    media: [
+      {
+        type: "image",
+        src: "/images/marker-drawings/3D-Shapes.png",
+        description: "4 Basic 3D Shapes rendered with gray marker. First marker rendering assignment"
+      },
+      {
+        type: "image",
+        src: "/images/marker-drawings/Braun Radio.png",
+        description: "Product sketch of a Braun RT20 radio"
+      },
+      {
+        type: "image",
+        src: "/images/marker-drawings/Memphis-Couch.png",
+        description: "Product sketch of a Memphis Big Sur couch"
+      },
+      {
+        type: "image",
+        src: "/images/marker-drawings/NailPolish.png",
+        description: "Observational drawing of nail polish on my desk"
+      },
+      {
+        type: "image",
+        src: "/images/marker-drawings/Bauhaus-Cradle.png",
+        description: "Product sketch with detail view of a Bauhaus style cradle by Peter Keler<br><a href='https://cad.onshape.com/documents/156c0e336ea844b843e52b3a/w/5eafba01e30db58fb391f378/e/0b4278793ce47ea694e90c8a?renderMode=0&uiState=68cb0ab5ae702ad83383a8ac' target='_blank'>View the CAD</a>"
+      },
+      {
+        type: "image",
+        src: "/images/marker-drawings/Memphis-Car-Lamp.png",
+        description: "Product sketch with detail view of a Memphis style Super Lamp by Martine Bedin<br><a href='https://cad.onshape.com/documents/5291432d0453bc39f032adec/w/7b0cb99b73d3a547962d7eaa/e/a094d0ae50b31adfe831fe2f?renderMode=0&uiState=68cb0a26fa9e3846e7484213' target='_blank'>View the CAD</a>"
+      }
+    ],
+    skills: [
+      {
+        name: "Marker Rendering",
+        description: "Developed basic skills in marker-based rendering techniques for technical and product sketching"
+      },
+      {
+        name: "Product Sketching",
+        description: "Created detailed product sketches of existing designs"
+      },
+      {
+        name: "Observational Drawing",
+        description: "Practiced drawing from life and reference materials to improve visual accuracy and proportion"
+      }
+    ],
+    date: "2025-09"
   }
   //,
   // {
