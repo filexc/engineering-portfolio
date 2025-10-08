@@ -305,6 +305,89 @@ export const projects = [
       }
     ],
     date: "2025-09"
+  }, 
+  {
+    id: 6,
+    title: "Product Redesign",
+    shortDescription: "Redesigned an alarm clock",
+    fullDescription: "I redesigned the casing for an alarm clock to allow for the clock to be rechargeable through a portable battery pack.",
+    flagshipImage: "/images/placeholder.jpg",
+    media: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/BqobUwFpuxY?si=IsIFM5wdVs8OseS9",
+        description: "Short video describing redesign process"
+      },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-AmazonBasicsLabel.png",
+      //   description: "Product label from the Amazon Basics mouse showing model number"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-ExternalScrew.png",
+      //   description: "Phillips head screw used to secure the mouse casing"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-TopCasing.png",
+      //   description: "Top casing of the mouse"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-Internal Screw.png",
+      //   description: "Internal Phillips head screw used to secure the PCB to the bottom casing"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-PlasticPiece.png",
+      //   description: "Transparent plastic component used to refract the red LED light through"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-BottomCasing.png",
+      //   description: "Interior view of the bottom mouse casing"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-ScrollWheel.png",
+      //   description: "Scroll wheel mechanism removed from the PCB, showing the wheel and axle assembly"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-Connector.png",
+      //   description: "White plastic header connector with five pins for electrical component connections"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-USBCable.png",
+      //   description: "USB cable assembly with USB-A connector and internal header connector for power and data transmission"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/images/mouse-dissection/MouseDissection-PCB.png",
+      //   description: "Main printed circuit board with optical sensor, switches, resistors, capacitors, and connectors"
+      // }
+    ],
+    skills: [
+      {
+        name: "CAD",
+        description: "Used computer-aided design software to model and redesign the alarm clock casing"
+      },
+      {
+        name: "Dimensioned Drawings",
+        description: "Created technical drawings with precise measurements and specifications for manufacturing"
+      },
+      {
+        name: "Product Redesign",
+        description: "Analyzed existing product and redesigned components to improve functionality"
+      },
+      {
+        name: "Reverse Engineering",
+        description: "Disassembled and analyzed the internal structure of the alarm clock to understand its components"
+      }
+    ],
+    date: "2025-10"
   }
   //,
   // {
