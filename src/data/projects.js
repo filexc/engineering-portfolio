@@ -310,64 +310,75 @@ export const projects = [
     id: 6,
     title: "Product Redesign",
     shortDescription: "Redesigned an alarm clock",
-    fullDescription: "I redesigned the casing for an alarm clock to allow for the clock to be rechargeable through a portable battery pack.",
-    flagshipImage: "/images/placeholder.jpg",
+    fullDescription: "I redesigned the casing for an alarm clock to allow for the clock to be rechargeable through a portable battery pack. This process started with a dissection of the original object and concept sketching of what I wanted to achieve with the redesign. I then made a basic block CAD for dimensions, and printed a first draft to see if the pieces fit together. I ultimately came to a final product that isn't fully functional, but all the pieces fit together (but the screws were all stripped so it doesn't stay together). The major problem is with power supply and needing to up the load on the battery pack to maintain consistent voltage.",
+    flagshipImage: "/images/alarm-clock/final-cad.png",
     media: [
       {
         type: "video",
-        src: "https://www.youtube.com/embed/BqobUwFpuxY?si=IsIFM5wdVs8OseS9",
+        src: "https://www.youtube.com/embed/ob08G0msp8A",
         description: "Short video describing redesign process"
       },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-AmazonBasicsLabel.png",
-      //   description: "Product label from the Amazon Basics mouse showing model number"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-ExternalScrew.png",
-      //   description: "Phillips head screw used to secure the mouse casing"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-TopCasing.png",
-      //   description: "Top casing of the mouse"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-Internal Screw.png",
-      //   description: "Internal Phillips head screw used to secure the PCB to the bottom casing"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-PlasticPiece.png",
-      //   description: "Transparent plastic component used to refract the red LED light through"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-BottomCasing.png",
-      //   description: "Interior view of the bottom mouse casing"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-ScrollWheel.png",
-      //   description: "Scroll wheel mechanism removed from the PCB, showing the wheel and axle assembly"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-Connector.png",
-      //   description: "White plastic header connector with five pins for electrical component connections"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-USBCable.png",
-      //   description: "USB cable assembly with USB-A connector and internal header connector for power and data transmission"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/images/mouse-dissection/MouseDissection-PCB.png",
-      //   description: "Main printed circuit board with optical sensor, switches, resistors, capacitors, and connectors"
-      // }
+      {
+        type: "image",
+        src: "/images/alarm-clock/alarm-clock-original.jpg",
+        description: "Original packaging of the alarm clock"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/concept-sketches-1.jpeg",
+        description: "Marker-rendered concept sketches"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/concept-sketches-2.jpeg",
+        description: "Additional concept sketches, more focused on form"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/dissection-process.jpeg",
+        description: "In the process of dissecting the alarm clock"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/dissection-pieces.jpeg",
+        description: "All original components laid out to measure parts and plan the redesign"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/initial-cad.png",
+        description: "Initial CAD model, not accounting for battery space"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/final-cad.png",
+        description: "Final CAD model"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/cad-back.png",
+        description: "Rear CAD view showing button cutouts"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/rough-draft-print.jpeg",
+        description: "First 3D-printed draft used to validate linkage sizes"
+      },
+      
+      {
+        type: "image",
+        src: "/images/alarm-clock/final-product-1.jpeg",
+        description: "Final assembled redesign—front view with display"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/final-product-2.jpeg",
+        description: "Final assembled redesign—three-quarter view highlighting with light on"
+      },
+      {
+        type: "image",
+        src: "/images/alarm-clock/final-product-3.png",
+        description: "Rear view showing access to battery pack and ports"
+      }
     ],
     skills: [
       {
@@ -387,6 +398,10 @@ export const projects = [
         description: "Disassembled and analyzed the internal structure of the alarm clock to understand its components"
       }
     ],
+    onshape: {
+      url: "https://cad.onshape.com/documents/bda76127caba21ecc927429e/w/5d31dfef2cb18ffb66f094a6/e/f2b49e753e9c8b41fcc73ae4?renderMode=0&uiState=6902fc138ff6106e772874b9",
+      platform: "Onshape"
+    },
     date: "2025-10"
   }
   //,

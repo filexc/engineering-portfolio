@@ -118,6 +118,21 @@ const ProjectDetail = () => {
                 </a>
               </div>
             )}
+            {project.onshape && (
+              <div className="website-link-inline">
+                <a 
+                  href={project.onshape.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="website-button-small"
+                >
+                  <svg className="website-icon-small" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 3h18v18H3V3zm4 4v10h10V7H7zm2 2h6v6H9V9z"/>
+                  </svg>
+                  View on {project.onshape.platform}
+                </a>
+              </div>
+            )}
             {project.appStore && (
               <div className="app-store-link-inline">
                 <a 
