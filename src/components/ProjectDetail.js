@@ -78,7 +78,7 @@ const ProjectDetail = () => {
 
       <section className="project-overview">
         <div className="flagship-image">
-          {(project.id === 4 || project.id === 6) && project.media && project.media.some(item => item.type === "video") ? (
+          {(project.id === 4 || project.id === 6 || project.id === 7) && project.media && project.media.some(item => item.type === "video") ? (
             // For Mouse Dissection and Product Redesign projects, show the video instead of the cover image
             (() => {
               const videoItem = project.media.find(item => item.type === "video");
@@ -183,8 +183,8 @@ const ProjectDetail = () => {
       </section>
 
       {project.media && project.media.length > 0 && project.media.filter((item, index) => {
-        // For Mouse Dissection and Product Redesign projects, exclude the video from gallery since it's shown as flagship content
-        if ((project.id === 4 || project.id === 6) && item.type === "video") {
+        // For Mouse Dissection, Product Redesign, and Auto Rotation projects, exclude the video from gallery since it's shown as flagship content
+        if ((project.id === 4 || project.id === 6 || project.id === 7) && item.type === "video") {
           return false;
         }
         return true;

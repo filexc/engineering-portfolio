@@ -1,10 +1,15 @@
 // Utility function to get the correct image path for both local and production
 export const getImagePath = (imagePath) => {
+  // If it's already a full URL (external), return it as-is
+  if (imagePath && (imagePath.startsWith('http://') || imagePath.startsWith('https://'))) {
+    return imagePath;
+  }
+  
   // Remove leading slash if present
   const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
   
   // For GitHub Pages, we need to include the repository name
-  if (window.location.hostname === 'filexc.github.io') {
+  if (typeof window !== 'undefined' && window.location.hostname === 'filexc.github.io') {
     return `/engineering-portfolio/${cleanPath}`;
   }
   

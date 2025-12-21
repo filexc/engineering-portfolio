@@ -403,6 +403,31 @@ export const projects = [
       platform: "Onshape"
     },
     date: "2025-10"
+  },
+  {
+    id: 7,
+    title: "Engineering Final Project: Auto Rotation",
+    shortDescription: "Automated the rotational aspect of FRC robots so drivers don't have to deal with rotation during matches",
+    fullDescription: "This project focused on automating the rotational aspect of our FRC robots so the drivers don't have to deal with that during a match. The robot can calculate what angle it needs to be at and automatically rotate to the correct position, allowing drivers to focus on other aspects of gameplay.",
+    flagshipImage: "https://img.youtube.com/vi/TrFXUGXqrJ8/hqdefault.jpg",
+    media: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/TrFXUGXqrJ8",
+        description: "Video demonstration of the auto rotation system in action"
+      }
+    ],
+    skills: [
+      {
+        name: "FRC Java Programming",
+        description: "Used Java programming within the FRC framework to implement autonomous rotation control"
+      },
+      {
+        name: "Simulation",
+        description: "Utilized AdvantageScope simulation tools to test and validate the auto rotation system before testing it on the robot"
+      }
+    ],
+    date: "2025-12"
   }
   //,
   // {
